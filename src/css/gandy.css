@@ -1,0 +1,362 @@
+/* Gandy Styles
+
+ * Place this style sheet after the main sheet in an html document or
+   add it to the bottom of your main style sheet
+	
+ * Color theme generated from w3schools w3.css Color Generator
+   located at www.w3schools.com/w3css/w3css_color_generator.asp
+ */
+ 
+.theme-l5 {color:#000 !important; background-color:#fafbfb !important}
+.theme-l4 {color:#000 !important; background-color:#eff2f0 !important}
+.theme-l3 {color:#000 !important; background-color:#dfe6e1 !important}
+.theme-l2 {color:#000 !important; background-color:#cfd9d3 !important}
+.theme-l1 {color:#000 !important; background-color:#bfcdc4 !important}
+.theme-d1a {color:#fff !important; background-color:#a0beaa !important}/* #bfcdc4 */
+.theme-d1 {color:#000 !important; background-color:#9ab0a2 !important}
+.theme-d2 {color:#fff !important; background-color:#86a08f !important}
+.theme-d3 {color:#fff !important; background-color:#71907c !important}
+.theme-d4 {color:#fff !important; background-color:#617b6a !important}
+.theme-d5 {color:#fff !important; background-color:#516758 !important}
+
+.theme-light {color:#000 !important; background-color:#fafbfb !important}
+.theme-dark {color:#fff !important; background-color:#516758 !important}
+.theme-action {color:#fff !important; background-color:#516758 !important}
+
+.theme {color:#000 !important; background-color:#afc0b5 !important}
+.text-theme {color:#afc0b5 !important}
+.border-theme {border-color:#afc0b5 !important}
+
+.hover-theme:hover {color:#000 !important; background-color:#afc0b5 !important}
+.hover-text-theme {color:#afc0b5 !important}
+.hover-border-theme:hover {border-color:#afc0b5 !important}
+
+/* Added-modified selectors from other frameworks  ========================= */
+/* ========== Need to move to main css when finished ========== */
+/* Missing in w3v4 */
+
+
+/* from Terry */
+.brdr3-black {
+	border:3px solid black }
+.brdr3-red {
+	border:3px solid red }
+.brdr3-green {
+	border:3px solid green }
+.brdr3-blue {
+	border:3px solid blue }	
+.brdr3-yellow {
+	border:3px solid yellow }	
+.brdr4-ridge-yellow {
+	border: 4px ridge #fbf7b4;}
+
+.hr5-ridge-yellow {
+	border:5px ridge #fbf7b4;
+	margin:0; }
+/* === end items to move to main css === */
+
+/* Gandy unique changes to css */
+.page-wrap { 
+	max-width: 75rem; /* 75x16=1200px */
+	margin: auto;
+	/* overflow-x:hidden; */ }
+
+.hdr-col {
+	display: block; }
+.logo-box {
+	text-align:center; }
+.logo-1 {
+	display: inline-block;
+	font-size:1.25rem; }
+.logo-2 {
+	display: inline-block;
+	font-size:.875rem; }
+.wship-box {
+	display: block;
+	font-size: .875rem; }
+.wship-table {
+	border-collapse:collapse;
+	border-spacing:0;
+	display:table;
+	margin-left: auto;
+	margin-right: auto; }
+.wship-td {
+	padding-right:0px; }
+.hdraddr-brk {
+	display: block; }
+
+.nav-span {
+	display: block;
+	/*margin-bottom: 32px;*/ }
+.nav-btn-sz {
+	float:left;
+	font-size:13px;
+	font-weight: bold;
+	margin:2px 0px;
+	padding: 9px 1px 10px;
+	width: 69px; }
+
+.about-nav-btn {
+	/*float: left;*/
+	font-size: 12px;
+	margin: 2px 0px;
+	padding: 8px 4px;
+	width: 60px; }
+
+
+@media (min-width:601px) {
+	.logo-1 {
+		font-size:1.75rem; }
+	.logo-2 {
+		font-size:1.125rem; }
+	.wship-time {
+		text-align:center; }
+	.wship-box {
+		display: inline-block;
+		margin:auto;}
+	.wship-td {
+		padding-right:16px; }
+	.hdraddr-brk {
+		display: inline-block; }
+	.nav-btn-sz {
+		margin:4px 8px;
+		/*padding: 8px 8px;*/ }
+}
+
+@media (min-width:760px) {
+	.hdr-row {
+		display:table;
+		width:100% }
+	.hdr-col {
+		display:table-cell }
+	.logo-box {
+		display: inline-block;
+		text-align:left;
+		float:left;
+		padding-left:1rem;}
+	.logo-1 {
+		display: block;
+		font-size:2.125rem; }
+	.logo-2 {
+		display: inline-block;
+		font-size:1.5rem; }
+	.wship-time {
+		display:inline-block;
+		/* float: right; */
+		/* padding-right:1rem; */ }
+	.nav-span {
+		display: inline-block; }
+	.nav-btn-sz {
+		margin:4px 8px; }
+}
+
+
+.coc-quote {
+	/*line-height: 1.5em;*/
+	text-align: center;
+	vertical-align: middle;
+	font-style: italic;
+	font-weight: bold;
+	margin:0;
+}
+
+.study {
+	clear: both;
+	display: block;
+	font-size: .85em;
+	line-height: 1.1875;
+	text-align: center;
+	/* padding: 0.5em 0.75em; */
+	/* border: 2px solid blue; */
+}
+.study-img {
+	max-width: 100%;
+	display: block;
+	margin: 0 auto; }
+.study-p {
+	max-width: 640px; /*Set it to the width of image*/
+	margin: 0 auto; }
+
+	
+
+	
+
+/* aside */
+aside {
+	/*background-color: #eff2f0; /*change to theme color*/
+	padding: 0.5em 0.75em; }
+aside h2, aside h3, aside h4, aside h5 {
+	text-align: center; }
+/*aside p {
+	text-align: center;
+	line-height: 1.5em; */
+}
+.info-bg {
+	/* border: 2px solid red; */
+	background-color: #eeeeee; /* #e9eaf2 */
+}
+.table-border {
+	border: 2px solid green;
+}
+.table-cntr {
+	margin: auto;
+}
+#service-time table, tr {
+	/* border: 1px solid black; */
+	height: 1.5em;
+	text-align: left;
+	vertical-align: middle;
+}
+#service-time caption {
+	font-size: 1.17em;
+	font-weight: bold;
+	line-height: 2em;
+}
+.service-title { 
+	font-weight: bold;
+	line-height: 1.75em;
+	text-align: center;
+}
+.time-change {
+	font-size: 0.83em;
+	font-style: italic;
+	font-weight: bold;
+	text-align: center;
+}
+.tr1 {
+	height: 0.5em;
+}
+
+/* About--Beliefs */
+#main {
+	clear: both;
+	/* line-height: 1.375;*/
+	/* padding: 0.5em 0.75em; */}
+#main h2 {
+color: #5a7595; /* #516758 #617b6a #71907c */
+/*font-size : 1.5em;*/
+font-style: italic;
+font-weight: normal;
+margin: 0 0 17px 0;
+padding: 0 0 10px 0;
+border-bottom: 1px solid #C3C3C3; }
+#main h6 {
+	color: #5a7595; /* #516758 */
+	font-style: italic;
+	font-weight: normal;
+	margin: 0; }
+
+
+#beliefs {
+	clear: both;
+	/* line-height: 1.375;*/
+	/* padding: 0.5em 0.75em; */}
+#beliefs h2 {
+color: #5a7595;
+/*font-size : 1.5em;*/
+font-style : italic;
+font-weight : normal;
+margin : 0 0 17px 0;
+padding : 0 0 10px 0;
+border-bottom : 1px solid #C3C3C3; }
+#beliefs i {
+	color:#5a7595; } /* #afc0b5 */
+
+
+
+/* Bulletins */	
+.bulletin-year {
+	border:2px solid #757575;
+}
+.bulletin-month {
+	border:2px solid #b4b4b4;
+	display:inline-block;
+	margin:4px 0 0 0;
+	padding:0px;
+	height:165px;
+	width:200px;
+	vertical-align:top;
+}
+
+.bulletin-month a {
+	outline: none;
+	text-decoration: none;
+	
+}
+.bulletin-month a:link {
+	color: blue;  /* #265301 */
+}
+
+.bulletin-month a:visited {
+	color: purple;  /* #437A16 */
+}
+
+.bulletin-month a:focus {
+	border-bottom: 1px solid;
+	background: #BAE498;
+}
+.bulletin-month a:hover {
+	border-bottom: 1px solid;     
+	background: #CDFEAA;
+}
+.bulletin-month a:active {
+	background: #265301;
+	color: #CDFEAA;
+}
+
+
+footer {
+	/* background-color: #eeeeee; /* #cccccc #7b9b69 */
+	font-size: .8125em;
+	font-style: italic;
+	line-height: 1.25em;
+	padding: 1em 1em; }
+
+
+/* Container Width as a Percentage */
+.w15 { width:14.99999% } /* or 15% */
+.w20 { width:19.99999% }
+.w25 { width:24.99999% }
+.w30 { width:29.99999% }
+.w33 { width:33.33333% } /* or 32.99999% */
+.w40 { width:39.99999% }
+.w50 { width:49.99999% }
+.w60 { width:59.99999% }
+.w66 { width:66.66666% } /* or 65.99999% */
+.w70 { width:69.99999% }
+.w75 { width:74.99999% }
+.w80 { width:79.99999% } 
+.w85 { width:84.99999% }
+.w100 { width:100% }
+
+
+/* Deletable Items */
+.nfs10 { font-size:10px; }
+.nfs11 { font-size:11px; }
+.npad0-tb {
+	padding-top:0;
+	padding-bottom:0; }
+.npad1-tb {
+	padding-top:1px;
+	padding-bottom:1px; }
+.npad2-tb {
+	padding-top:2px;
+	padding-bottom:2px; }
+.npad3-tb {
+	padding-top:3px;
+	padding-bottom:3px; }
+
+.box {
+	display: inline-block;
+	margin: 0 2px;
+}
+	
+	#ff73ff
+	#ff00ff
+	#c60bcc
+	#93278f
+	#9dca91
+	#129e07
+	#046839
+	#139d0a
+	

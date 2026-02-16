@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<meta name="description" content="Gandy Church of Christ is congregation of Bible belieiving people.">
+  <meta name="author" content="Terry Bailey">
+  
+	<!--
+  <meta property="og:title" content="My Website">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.pathToSite.test/ifNeeded/">
+  <meta property="og:description" content="A simple HTML5 Template.">
+  <meta property="og:image" content="image.png">
+	-->
+
+  <link rel="icon" href="/images/favicon-bible.png">
+<!--  <link rel="icon" href="/favicon.svg" type="image/svg+xml">  -->
+<!--  <link rel="apple-touch-icon" href="/apple-touch-icon.png">  -->
+<!--  apple-icon: 180x180px or 190x190px -->
+
+  <link rel="stylesheet" href="/css/my.css">
+	<link rel="stylesheet" href="/css/gandy.css">
+	
+<!--
+The <... href="css/styles.css?v=1.0"> query string added at the end of the 
+CSS link is completely optional. It’s a handy trick when you’ve updated your 
+stylesheet to also update this query string (say, to 1.1 or 2.0), because doing 
+so ensures that browsers will throw out any older, cached copy of the CSS file 
+and load the fresh, new version.
+-->
+
+	<title>Gandy - {{ tabTitle }}</title>
+</head>
+
+<body>
+<div class="page-wrap">
+
+{% include "partials/site-header-nav.html" %}
+
+<!-- Container for Main and Aside. 
+  One row with Two columns. Use cell class to give columns/background equal height -->
+<div class="cell-row xbrdr3-red"> <!-- Cell Container -->
+  
+<!--Main/Left Cell (1of2)-->
+
+<main id='main' tabindex="-1" class='container cell w66 mobile xbrdr3-blue'>
+{% block content %}
+{{ content | safe }}
+{% endblock %}
+</main>
+
+{% include "partials/aside.html" %}
+
+</div><!-- end Cell Container -->
+
+{% include "partials/site-footer.html" %}
+
+</div><!--end page-wrap-->
+</body>
+</html>
